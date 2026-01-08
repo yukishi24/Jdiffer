@@ -1,0 +1,31 @@
+name: Product Backlog
+description: プロダクトバックログIssue
+title: "[PB-000] 概要"
+labels: ["ProductBacklog"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 要望の概要
+      description: 一言でどんな価値・機能か
+      placeholder: "例: 設定をGUIで編集できるようにしたい"
+    validations:
+      required: true
+
+  - type: textarea
+    id: detail
+    attributes:
+      label: 詳細説明
+      description: まだ粗くてよいので、思いついている内容をメモ
+      placeholder: "- 想定ユーザー\n- 使い方のイメージ\n- 懸念点 など"
+    validations:
+      required: false
+  
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: 受け入れ条件
+      description: テスト可能な観点で箇条書き
+      placeholder: "- ユーザーがXXXできること\n- エラー時にYYYが表示されること"
+    validations:
+      required: true

@@ -1,0 +1,31 @@
+name: Product Backlog Item
+description: プロダクトバックログアイテムIssue
+title: "[PBI-000] 概要"
+labels: ["ProductBacklogItem"]
+body:
+  - type: textarea
+    id: requirement
+    attributes:
+      label: 要件の詳細
+      description: 機能要件・非機能要件を記述
+      placeholder: "- 機能要件\n- 非機能要件\n- 制約条件"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: 受け入れ条件
+      description: テスト可能な観点で箇条書き
+      placeholder: "- ユーザーがXXXできること\n- エラー時にYYYが表示されること"
+    validations:
+      required: true
+
+  - type: textarea
+    id: link
+    attributes:
+      label: 関連Product Backlog
+      description: 関連Issue番号やリンク
+      placeholder: "- Story: #123\n- Epic: #45"
+    validations:
+      required: false

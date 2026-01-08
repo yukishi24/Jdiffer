@@ -1,0 +1,31 @@
+name: Sprint Backlog Item
+description: スプリントバックログアイテムIssue
+title: "[SBI-000] 概要"
+labels: ["SprintBacklogItem"]
+body:
+  - type: textarea
+    id: work-plan
+    attributes:
+      label: 作業内容・タスク分解
+      description: このスプリントで行う具体的な作業
+      placeholder: "- 実装\n- テスト\n- ドキュメント更新 など"
+    validations:
+      required: true
+  
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: 受け入れ条件
+      description: テスト可能な観点で箇条書き
+      placeholder: "- ユーザーがXXXできること\n- エラー時にYYYが表示されること"
+    validations:
+      required: true
+    
+  - type: textarea
+    id: pbi-link
+    attributes:
+      label: 元PBI / Storyリンク
+      description: 関連するPBIやUser StoryのIssue番号
+      placeholder: "- PBI: #123\n- Story: #45"
+    validations:
+      required: true

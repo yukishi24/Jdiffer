@@ -1,0 +1,39 @@
+name: User Story
+description: ユーザーストーリーIssue
+title: "[US-000] 概要"
+labels: ["UserStory"]
+body:
+  - type: textarea
+    id: user-story
+    attributes:
+      label: UserStory
+      description: As a [ユーザー], I want [機能] so that [価値]
+      placeholder: "As a developer, I want CLIコマンドを追加 so that タスク自動化。"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: 受け入れ条件
+      description: テスト可能な観点で箇条書き
+      placeholder: "- ユーザーがXXXできること\n- エラー時にYYYが表示されること"
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景・目的
+      description: ビジネス価値や技術的背景
+      placeholder: "なぜこのストーリーが必要かを記載"
+    validations:
+      required: false
+
+  - type: input
+    id: estimation
+    attributes:
+      label: 見積もり (Story Points)
+      placeholder: "3"
+    validations:
+      required: false

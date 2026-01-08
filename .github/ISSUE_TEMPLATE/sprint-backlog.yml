@@ -1,0 +1,47 @@
+name: Sprint Backlog
+description: スプリントバックログIssue
+title: "[SB-000] 概要"
+labels: ["SprintBacklog"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 要望の概要
+      description: 一言でどんな価値・機能か
+      placeholder: "例: 設定をGUIで編集できるようにしたい"
+    validations:
+      required: false
+
+  - type: textarea
+    id: task
+    attributes:
+      label: タスク詳細
+      description: 具体的な作業内容
+      placeholder: "ログ作成APIの実装（POST /api/log）"
+    validations:
+      required: true
+
+  - type: input
+    id: estimate
+    attributes:
+      label: 見積もり
+      placeholder: "3 (ストーリーポイント/工数)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足・依存関係
+      placeholder: "依存Issue: #125\n技術的制約: ..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: 受け入れ条件
+      description: テスト可能な観点で箇条書き
+      placeholder: "- ユーザーがXXXできること\n- エラー時にYYYが表示されること"
+    validations:
+      required: true
