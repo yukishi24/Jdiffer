@@ -1,0 +1,32 @@
+name: Feature
+description: User Story を実装するための機能
+title: "[Feature] "
+labels:
+  - type:feature
+  - status:backlog
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: この Feature の概要
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: 実装する範囲
+    validations:
+      required: true
+
+  - type: input
+    id: story_id
+    attributes:
+      label: Related User Story ID
+      placeholder: US-XXX
+    validations:
+      required: false
+

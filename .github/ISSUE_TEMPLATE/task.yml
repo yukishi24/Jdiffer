@@ -1,0 +1,32 @@
+name: Task
+description: Feature を構成する作業単位
+title: "[Task] "
+labels:
+  - type:task
+  - status:backlog
+
+body:
+  - type: input
+    id: parent_feature
+    attributes:
+      label: Parent Feature Issue
+      description: "紐づく Feature Issue 番号（例: #123）"
+      placeholder: "#123"
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: ToDo
+      description: "この Task でやること"
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of Done
+      description: "完了条件"
+    validations:
+      required: true

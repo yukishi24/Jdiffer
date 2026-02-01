@@ -1,0 +1,90 @@
+[
+  {
+    "name": "type:feature",
+    "color": "d73a4a",
+    "description": "User Story を実装するための機能"
+  },
+  {
+    "name": "type:task",
+    "color": "d73a4a",
+    "description": "Feature を構成する作業単位"
+  },
+  {
+    "name": "type:bug",
+    "color": "d73a4a",
+    "description": "不具合"
+  },
+  {
+    "name": "type:spike",
+    "color": "d73a4a",
+    "description": "技術調査・検証"
+  },
+
+  {
+    "name": "status:backlog",
+    "color": "0366d6",
+    "description": "Backlog に積まれている状態"
+  },
+  {
+    "name": "status:ready",
+    "color": "0366d6",
+    "description": "Sprint に入れられる状態"
+  },
+  {
+    "name": "status:doing",
+    "color": "0366d6",
+    "description": "作業中"
+  },
+  {
+    "name": "status:review",
+    "color": "0366d6",
+    "description": "レビュー・確認中"
+  },
+  {
+    "name": "status:done",
+    "color": "0366d6",
+    "description": "完了"
+  },
+  {
+    "name": "status:blocked",
+    "color": "0366d6",
+    "description": "作業がブロックされている"
+  },
+
+  {
+    "name": "priority:high",
+    "color": "fbca04",
+    "description": "優先度：高"
+  },
+  {
+    "name": "priority:middle",
+    "color": "fbca04",
+    "description": "優先度：中"
+  },
+  {
+    "name": "priority:low",
+    "color": "fbca04",
+    "description": "優先度：低"
+  },
+
+  {
+    "name": "size:xs",
+    "color": "6f42c1",
+    "description": "〜1時間"
+  },
+  {
+    "name": "size:s",
+    "color": "6f42c1",
+    "description": "半日程度"
+  },
+  {
+    "name": "size:m",
+    "color": "6f42c1",
+    "description": "1日程度"
+  },
+  {
+    "name": "size:l",
+    "color": "6f42c1",
+    "description": "2〜3日程度"
+  }
+]

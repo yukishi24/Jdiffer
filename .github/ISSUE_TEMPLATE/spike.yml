@@ -1,0 +1,28 @@
+name: Spike
+description: 技術調査・検証
+title: "[Spike] "
+labels: ["type:spike", "status:backlog"]
+body:
+  - type: input
+    id: purpose
+    attributes:
+      label: Purpose
+      description: 調査の目的
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Investigation Scope
+      description: 調査内容
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected Output
+      description: 成果物（結論・ドキュメントなど）
+    validations:
+      required: true
